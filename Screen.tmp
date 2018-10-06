@@ -1,0 +1,315 @@
+
+Batch job BEGIN
+***
+Danfoss PLUS+1 GUIDE Software: [Make] Version: 10.1.6
+***
+
+Expanding MKFILE11.TXT to MKFILE11.MAK
+Using host section ARM-GCC 4.7 2013Q2-20130614 -BEGIN
+Expanding MKFILE12.TXT to MKFILE12.MAK
+Using host section ARM-GCC 4.7 2013Q2-20130614 -BEGIN
+Expanding MKFILE2.TXT to MKFILE2.MAK
+Using host section ARM-GCC 4.7 2013Q2-20130614 -BEGIN
+Expanding MKFILE31.TXT to MKFILE31.MAK
+Using host section ARM-GCC 4.7 2013Q2-20130614 -BEGIN
+Expanding MKFILE32.TXT to MKFILE32.MAK
+Using host section ARM-GCC 4.7 2013Q2-20130614 -BEGIN
+***
+NO ERRORS FOUND BY Make
+***
+
+
+MAKEJOB11 BEGIN
+
+Generating OS exr MKFILE11.MAK
+
+CAN and NV symbols
+
+Generating nob code from MC024_110_lg_112T.scs
+***
+Danfoss PLUS+1 GUIDE Software: [scstonob] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY scstonob
+***
+
+
+Generating exr from MC024_110_lg_112T.nob
+***
+Danfoss PLUS+1 GUIDE Software: [chpargu1] Version: 10.1.6
+***
+
+
+Generating  MC024_110_LG_112T.exr
+***
+NO ERRORS FOUND BY chpargu1
+***
+
+
+Generating code from p1x Telematics_Verification_v1.p1x
+***
+Danfoss PLUS+1 GUIDE Software: [ProjectToC] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY ProjectToC
+***
+
+
+Check and Link application TELEMATICS_VERIFICATION_V1
+***
+Danfoss PLUS+1 GUIDE Software: [glink] Version: 10.1.6
+***
+
+Reading Previous Module Outputs
+Reading Project External Reference Files
+Read:  70097978V170.exr. Creating h-file
+Read:  Telematics_Verification_v1.exr. Creating h-file
+Read:  MC024_110_LG_112T.exr. Creating h-file
+Seek File: C:\Users\boelenmi\AppData\Roaming\Danfoss\PLUS1\10.1\SDPLUS1\Temp\TEMPH.TMP
+Removing File: C:\Users\boelenmi\AppData\Roaming\Danfoss\PLUS1\10.1\SDPLUS1\Temp\TEMPH.TMP
+Read:  70097978V170.exr
+Read:  Telematics_Verification_v1.exr
+Read:  MC024_110_LG_112T.exr
+Deleting Modules with changed indata
+Writing Module Outputs
+Writing NV Allocation
+Generating Object Reference
+Checking Project External References
+Checking "TMP" path: C:\Users\boelenmi\AppData\Local\Temp
+Directory: C:\Users\boelenmi\AppData\Local\Temp exists, and is an absolute path!
+Merging error files to: TELEMATICS_VERIFICATION_V1.err
+Merge: Telematics_Verification_v1.rrr
+Merge: MC024_110_LG_112T.rrr
+Writing Log-Information to: TELEMATICS_VERIFICATION_V1.log
+Writing Application-Information to: TELEMATICS_VERIFICATION_V1.pxr
+Writing Release-Information to: Status.tmp
+***
+NO ERRORS FOUND BY glink
+***
+
+
+MAKEJOB11 END
+***
+Danfoss PLUS+1 GUIDE Software: [Errclr] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY Errclr
+***
+
+
+Generating c code from MC024_110_lg_112T.nob
+***
+Danfoss PLUS+1 GUIDE Software: [chpargu2] Version: 10.1.6
+***
+
+
+Generating  MC024_110_LG_112T.c
+Generating  MC024_110_LG_112T.noc
+***
+NO ERRORS FOUND BY chpargu2
+***
+
+
+MAKEJOB12 BEGIN
+
+Generating code from p1x Telematics_Verification_v1.p1x
+***
+Danfoss PLUS+1 GUIDE Software: [ProjectToC] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY ProjectToC
+***
+
+
+Allocate NV memory for application TELEMATICS_VERIFICATION_V1
+***
+Danfoss PLUS+1 GUIDE Software: [nvallocate] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY nvallocate
+***
+
+
+Check and Link application TELEMATICS_VERIFICATION_V1
+***
+Danfoss PLUS+1 GUIDE Software: [MergeErrorPass2] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY MergeErrorPass2
+***
+
+***
+Danfoss PLUS+1 GUIDE Software: [NOBFNUTT] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY NOBFNUTT
+***
+
+
+MAKEJOB12 END
+
+
+***
+Danfoss PLUS+1 GUIDE Software: [Errclr] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY Errclr
+***
+
+
+Compiling MC024_110_LG_112T.c
+***
+Danfoss PLUS+1 GUIDE Software: [sdcc] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY sdcc
+***
+
+
+Compiling TELEMATICS_VERIFICATION_V1.c
+***
+Danfoss PLUS+1 GUIDE Software: [sdcc] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY sdcc
+***
+
+
+Compiling _DynamicDiagnostic.c
+***
+Danfoss PLUS+1 GUIDE Software: [sdcc] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY sdcc
+***
+
+
+Compiling _nvdata.c _NVAllocation.h
+***
+Danfoss PLUS+1 GUIDE Software: [sdcc] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY sdcc
+***
+
+
+MAKEJOB2 BEGIN
+
+Create timekey
+***
+Danfoss PLUS+1 GUIDE Software: [mtimekey] Version: 10.1.6
+***
+
+_TIMEKEY.C created
+***
+NO ERRORS FOUND BY mtimekey
+***
+
+
+_____________________
+
+Extern C-compiler Begin
+
+Compiling _TIMEKEY.c
+***
+Danfoss PLUS+1 GUIDE Software: [sdcc] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY sdcc
+***
+
+
+Build TELEMATICS_VERIFICATION_V1.cmf
+***
+Danfoss PLUS+1 GUIDE Software: [MAKECMF] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY MAKECMF
+***
+
+
+Linking/Locate to TELEMATICS_VERIFICATION_V1.out
+
+Creating Intel Hex Records file TELEMATICS_VERIFICATION_V1.hex
+
+Extern C-compiler End
+
+_____________________
+***
+Danfoss PLUS+1 GUIDE Software: [MEMCalc] Version: 10.1.6
+***
+
+****** Memory Usage in bytes ******
+Type            Total           System          Application     Free            Used/Avail      
+------------------------------------------------------------------------------------------------
+ROM             507904          57998           1716            448190          0%              
+RAM             129536          19208           92              110236          0%              
+NV              3500            0               0               3500            0%              
+***
+NO ERRORS FOUND BY MEMCalc
+***
+
+
+Creating diagnostic info for TELEMATICS_VERIFICATION_V1
+
+Creating lhx TELEMATICS_VERIFICATION_V1.lhx
+***
+Danfoss PLUS+1 GUIDE Software: [p1insdoit] Version: 10.1.6
+***
+
+Dynamic Diagnostic Data Used
+Seek File: TELEMATICS_VERIFICATION_V1.hex
+Removing File: TELEMATICS_VERIFICATION_V1.hex
+Seek File: TELEMATICS_VERIFICATION_V1.plg
+Removing File: TELEMATICS_VERIFICATION_V1.plg
+***
+NO ERRORS FOUND BY p1insdoit
+***
+
+
+MAKEJOB2 END
+
+
+***
+Danfoss PLUS+1 GUIDE Software: [Errset] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY Errset
+***
+
+
+
+***
+Danfoss PLUS+1 GUIDE Software: [WriteScreentime] Version: 10.1.6
+***
+
+Now: 10/4/2018 5:27:58 PM
+***
+NO ERRORS FOUND BY WriteScreentime
+***
+
+
+Batch job END
+***
+Danfoss PLUS+1 GUIDE Software: [result] Version: 10.1.6
+***
+
+***
+NO ERRORS FOUND BY result
+***
+

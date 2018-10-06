@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project FileName="Telematics_Verification_v1.p1x">
+  <FileFormat>006B</FileFormat>
+  <GUIVersion>10.0.8.36</GUIVersion>
+  <ProgrammableHW PartNumber="11130919" Description="MC024-110/112-0_lg ver:70097968v170 (SYS:70097978v170)" Comment="MC024_110_lg">
+    <SystemFile FileName="70097978v170.SYS" Parameters="W1:DISABLE">
+      <APIDocument FileName="70097978.PDF"/>
+    </SystemFile>
+    <Application Name="Telematics_Verification_v1" Parameters="ModuleConnectionLog:Disabled">
+      <PID Description="Telematics_Verification_v1"/>
+      <MainModule ModuleName="MAINTASK" FileName="MC024_110_lg_112T.scs"/>
+    </Application>
+    <Output>
+      <Hexfile FileName="Telematics_Verification_v1.lhx"/>
+      <OutputTargetPartNumber></OutputTargetPartNumber>
+      <OutputTargetSerialNumber></OutputTargetSerialNumber>
+    </Output>
+    <TargetPartNumber></TargetPartNumber>
+  </ProgrammableHW>
+</Project>
